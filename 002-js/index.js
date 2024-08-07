@@ -17,6 +17,16 @@ function subtracao(x ,y){
 function init(){
     console.log("Teste hoisting");
 }
+//função para saber se numero primo.
+function primo(numero){
+    for(let i = 2; i < numero; i++){
+        if(numero % i === 0){
+            return false
+        }
+    }
+    
+    return numero !== 1
+}
 //Função anonima, obs tem que atribuir ela a uma variavel
 let funcaoAnonima = function (){
     console.log("função anonima");
