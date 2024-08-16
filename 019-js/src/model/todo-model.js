@@ -34,27 +34,13 @@ export class TarefaModel{
     get id(){
         return this.#id;
     }
-    toJson(){
-        return{
-            title: this.#title,
-            dueDate: this.#dueDate
-        }
-    }
 }
 
 export class TodoListModel{
-    #BASE_URL = "https://alunos.treinaweb.com.br/tw-todos/api/v1";
     todoList= []
     constructor(){ };
 
     add(tarefa){
-        fetch(`${this.#BASE_URL}/todos`, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: tarefa.toJson(),
-        })
         this.todoList.push(tarefa);
     }
     getAll(){
