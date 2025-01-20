@@ -10,7 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@nestjs/cli": "^10.4.4",
+    "@nestjs/cli": "^10.4.9",
     "nodemailer": "^6.9.14"
   },
   "devDependencies": {
